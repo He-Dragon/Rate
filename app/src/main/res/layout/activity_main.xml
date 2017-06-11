@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <com.example.rate.view.Rate
+        android:id="@+id/mRate"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:custom_rate_size="5"
+        app:custom_rate_active_size="4"
+        app:custom_rate_padding="3dp"
+        app:custom_rate_height="50dp"
+        app:custom_rate_width="50dp"
+        app:custom_rate_touch="true"
+        android:background="#FFFFFF"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <com.example.rate.view.FivePointedStar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_above="@+id/mRate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp" />
+</RelativeLayout>

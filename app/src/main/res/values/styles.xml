@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    //星评控件
+    <declare-styleable name="Rate">
+        <!--属性分别是：单个的宽，高，之间的距离，激活的数量，总数量，激活的drawable，没有激活的drawable，是否可以选择数量-->
+        <attr name="custom_rate_width" format="dimension"/>
+        <attr name="custom_rate_height" format="dimension"/>
+        <attr name="custom_rate_padding" format="dimension"/>
+        <attr name="custom_rate_active_size" format="integer"/>
+        <attr name="custom_rate_size" format="integer"/>
+        <attr name="custom_rate_active_drawable" format="reference"/>
+        <attr name="custom_rate_disactive_drawable" format="reference"/>
+        <attr name="custom_rate_touch" format="boolean"/>
+    </declare-styleable>
+
+</resources>
